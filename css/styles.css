@@ -50,6 +50,17 @@ img {
   width: 150px;
 }
 
+.nav__icon {
+  display: inline-block;
+  width: 2rem;
+  margin-right: 0.5rem;
+
+  svg {
+    position: relative;
+    top: 3px;
+  }
+}
+
 .nav {
 
 }
@@ -71,7 +82,6 @@ img {
   padding: 0.5rem 1rem;
 }
 
-
 .nav__link:hover,
 .nav__link:focus,
 .nav__link:active {
@@ -82,4 +92,8 @@ img {
 .nav__item--active .nav__link {
   background: var(--accent-colour);
   color: white;
+
+  .nav__icon svg path {
+    fill: #ffffff;
+  }
 }

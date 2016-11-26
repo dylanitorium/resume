@@ -12,7 +12,8 @@
   "dependencies": {
     "gumshoe": "cferdinandi/gumshoe",
     "smooth-scroll": "cferdinandi/smooth-scroll",
-    "sticky-js": "^1.1.5"
+    "sticky-js": "^1.1.5",
+    "svg-injector": "^1.1.3"
   },
   "devDependencies": {
     "autoprefixer": "^6.5.1",
@@ -37,6 +38,7 @@
   },
   "browser": {
     "smooth-scroll": "./node_modules/smooth-scroll/src/js/smooth-scroll.js",
-    "gumshoe": "./node_modules/gumshoe/src/js/gumshoe.js"
+    "gumshoe": "./node_modules/gumshoe/src/js/gumshoe.js",
+    "svg-injector": "./node_modules/svg-injector/svg-injector.js"
   }
 }

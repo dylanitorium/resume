@@ -1,5 +1,9 @@
 :root {
   --accent-colour: #36227f;
+  --accent-colour-light: color(
+    var(--accent-colour)
+    contrast(70%)
+  );
 }
 
 h1,
@@ -70,7 +74,11 @@ img {
 
 .nav__link:hover,
 .nav__link:focus,
-.nav__link:active,
+.nav__link:active {
+  background: var(--accent-colour-light);
+  color: black;
+}
+
 .nav__item--active .nav__link {
   background: var(--accent-colour);
   color: white;

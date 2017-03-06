@@ -12,8 +12,11 @@
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
   font-family: 'Oswald';
+  font-weight: 400;
 }
 
 h1 {
@@ -27,6 +30,15 @@ h2 {
 
 h3 {
   font-size: 2.3rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+  font-weight: 300;
 }
 
 p,
@@ -51,29 +63,22 @@ img {
   min-height: 1px;
 }
 
-.header__image {
-  border-radius: 50%;
-  display: block;
-  margin:  0 auto 2rem;
-  width: 150px;
+.header {
+  &__image {
+    border-radius: 50%;
+    display: block;
+    margin:  0 auto 2rem;
+    width: 150px;
+    transition: all 0.3s ease;
+  }
 }
 
-.nav__icon {
-  display: inline-block;
-  width: 2rem;
-  margin-right: 0.5rem;
 
-  svg {
-    position: relative;
-    top: 3px;
-  }
 
-  @media (min-width: 550px) {
-    display: none;
-  }
-
-  @media (min-width: 580px) {
-    display: inline-block;
+.stuck {
+  .header__image {
+    border-radius: 50%;
+    width: 75px;
   }
 }
 
@@ -98,6 +103,25 @@ img {
     visibility: visible;
     opacity: 1;
     z-index: 2;
+  }
+
+  &__icon {
+    display: inline-block;
+    width: 2rem;
+    margin-right: 0.5rem;
+
+    svg {
+      position: relative;
+      top: 3px;
+    }
+
+    @media (min-width: 550px) {
+      display: none;
+    }
+
+    @media (min-width: 580px) {
+      display: inline-block;
+    }
   }
 
   @media (min-width: 550px) {
@@ -170,8 +194,6 @@ img {
       }
     }
 
-
-
     &:hover,
     &:focus,
     &:active {
@@ -188,7 +210,6 @@ img {
       }
     }
   }
-
 
   @media (min-width: 550px) {
     display: none;
@@ -225,5 +246,16 @@ img {
   &:active {
     background: var(--accent-colour-light);
     color: black;
+  }
+}
+
+.tile {
+  border: 1px solid #000;
+  padding: 1.5rem;
+  margin-bottom: 15px;
+
+  &__context {
+    font-style: italic;
+    font-weight: 300;
   }
 }

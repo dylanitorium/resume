@@ -3,42 +3,35 @@
   "version": "1.0.0",
   "description": "Resume Website",
   "main": "index.js",
+  "repository": "https://github.com/dylanitorium/resume",
   "scripts": {
     "start": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "gumshoe": "cferdinandi/gumshoe",
-    "smooth-scroll": "cferdinandi/smooth-scroll",
-    "sticky-js": "^1.1.5",
-    "svg-injector": "^1.1.3"
-  },
   "devDependencies": {
     "autoprefixer": "^6.5.1",
-    "babel": "^6.5.2",
+    "babel-cli": "^6.24.0",
     "babel-core": "^6.17.0",
     "babel-loader": "^6.2.5",
     "babel-preset-es2015": "^6.16.0",
     "babel-runtime": "^6.11.6",
     "browserify": "^13.1.1",
     "browserify-shim": "^3.8.12",
+    "bulma": "^0.4.0",
     "css-loader": "^0.25.0",
     "eslint": "^3.8.0",
     "eslint-config-airbnb": "^12.0.0",
     "eslint-plugin-import": "^1.16.0",
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.4.1",
+    "extract-text-webpack-plugin": "^2.1.0",
     "json-loader": "^0.5.4",
-    "postcss-loader": "^0.13.0",
-    "precss": "^1.4.0",
+    "node-sass": "^4.5.2",
+    "sass-loader": "^6.0.3",
     "style-loader": "^0.13.1",
-    "webpack": "^1.13.2"
-  },
-  "browser": {
-    "smooth-scroll": "./node_modules/smooth-scroll/src/js/smooth-scroll.js",
-    "gumshoe": "./node_modules/gumshoe/src/js/gumshoe.js",
-    "svg-injector": "./node_modules/svg-injector/svg-injector.js"
+    "webpack": "^2.3.3",
+    "webpack-dev-server": "^2.4.2"
   }
 }

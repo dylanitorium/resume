@@ -18,7 +18,6 @@ const Role = ({ title, organisation, period, key }) => (
         </div>
       </div>
     </div>
-
     <h5 className="is-bold">{organisation}</h5>
   </div>
 );

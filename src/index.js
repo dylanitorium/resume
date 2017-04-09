@@ -1,2 +1,5 @@
-require('./scss/styles.scss');
-require('./images');
+import renderComponents from './js/components';
+import styles from './scss';
+import images from './images';
+
+renderComponents();

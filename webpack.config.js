@@ -1,12 +1,13 @@
 const webpack = require("webpack");
 const path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 
 module.exports = {
-	entry: './js/index.js',
+	entry: './src/index.js',
 	output: {
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '/dist/',
     filename: "scripts.js",
   },
   module: {
@@ -33,10 +34,25 @@ module.exports = {
             // use style-loader in development
             fallback: "style-loader"
           }),
+        },
+        {
+          test: /\.(eot|svg|ttf|woff|woff2)$/,
+          loader: 'file-loader?name=fonts/[name].[ext]'
+        },
+        {
+          test: /\.(png|svg)$/,
+          include: [
+            path.resolve(__dirname, "src/images"),
+          ],
+          loader: 'file-loader?name=images/[name].[ext]'
         }
     ]
   },
     plugins: [
+      new HtmlWebpackPlugin({
+        title: 'Dylan Sweetensen - PHP / JS Engineer',
+        template: 'src/templates/index.hbs'
+      }),
       new ExtractTextPlugin({
           filename: "styles.css",
       }),

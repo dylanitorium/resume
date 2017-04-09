@@ -1,0 +1,45 @@
+@import "~bulma/sass/utilities/_all.sass";
+
+// $body-background: $grey-darker;
+
+@import "~bulma";
+
+/**
+ * Styling for devicons
+ */
+.is-devicon {
+  height: 5rem;
+  width: 5rem;
+  font-size: 5rem;
+}
+
+/**
+ *  Special heading styles
+ */
+.section-title {
+  border-bottom: 1px solid $text;
+  padding-bottom: 0.5rem;
+  text-align: right;
+}
+
+/**
+ * Tier Styling
+ * ------------
+ * By default Tier 1 is 100% opacity
+ */
+ .is-tier-2 {
+   opacity: 0.7;
+ }
+
+ .is-tier-3 {
+   opacity: 0.4;
+ }
+
+ .legend-item {
+   text-align: right;
+   margin-bottom: 0.5rem;
+
+   .icon {
+     margin-top: -0.3rem;
+   }
+ }

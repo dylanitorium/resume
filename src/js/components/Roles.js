@@ -2,23 +2,36 @@ import React from 'react';
 import { render } from 'react-dom';
 import rolesData from '../data/roles';
 
-const Role = ({ title, organisation, period, key }) => (
-  <div className="box">
+const CollapseIcon = () => (
+  <div className="level-item">
+    <a className="icon is-large">
+      <i className="fa fa-chevron-circle-down"></i>
+    </a>
+  </div>
+);
+
+
+const Role = ({ title, organisation, period, description, location, key }) => (
+  <div className="box role-box">
     <div className="level is-marginless">
       <div className="level-left">
         <div className="level-item">
-          <div className="heading">
-            <h4 className="title is-6">{title}</h4>
+          <div className="heading is-marginless">
+            <h4 className="title is-6 is-bold is-spaced">{title}</h4>
+            <h5 className="subtitle is-6">{organisation}</h5>
           </div>
         </div>
       </div>
       <div className="level-right">
         <div className="level-item">
-          <span className='is-italic'>{period}</span>
+          <div class="content">
+            <div className='is-italic'>{period}</div>
+          </div>
         </div>
       </div>
     </div>
-    <h5 className="is-bold">{organisation}</h5>
+    <hr />
+    {description}
   </div>
 );
 

@@ -51,7 +51,7 @@ module.exports = {
     plugins: [
       new HtmlWebpackPlugin({
         title: 'Dylan Sweetensen - PHP / JS Engineer',
-        template: 'src/templates/index.hbs'
+        template: 'src/templates/index.html'
       }),
       new ExtractTextPlugin({
           filename: "styles.css",

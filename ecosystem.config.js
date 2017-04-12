@@ -3,6 +3,6 @@
   "script"      : "server.js",
   "watch"       : true,
   "env": {
-    "PORT": "8181",
+    "PORT": "8282",
   },
 }

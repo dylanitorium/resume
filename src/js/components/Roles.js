@@ -24,7 +24,7 @@ const Role = ({ title, organisation, period, description, location, key }) => (
       </div>
       <div className="level-right">
         <div className="level-item">
-          <div class="content">
+          <div className="content">
             <div className='is-italic'>{period}</div>
           </div>
         </div>

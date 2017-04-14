@@ -30,30 +30,54 @@
   &:before {
     content: $devicon-css-modules;
   }
+
+  &.colored {
+      color: #000;
+  }
 }
 .devicon-cssnext {
   &:before {
     content: $devicon-cssnext;
+  }
+
+  &.colored {
+      color: #4F7DBF;
   }
 }
 .devicon-ember {
   &:before {
     content: $devicon-ember;
   }
+
+  &.colored {
+      color: #DD6A58;
+  }
 }
 .devicon-silverstripe {
   &:before {
     content: $devicon-silverstripe;
+  }
+
+  &.colored {
+      color: #236399;
   }
 }
 .devicon-socketio {
   &:before {
     content: $devicon-socketio;
   }
+
+  &.colored {
+      color: #DB5CEE;
+  }
 }
 .devicon-webpack {
   &:before {
     content: $devicon-webpack;
   }
-}
 
+  &.colored {
+      color: #123AB1;
+      opacity: 0.5; // Hack - for now
+  }
+}

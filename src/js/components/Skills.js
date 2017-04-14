@@ -63,7 +63,9 @@ class Skill extends React.Component {
   }
 }
 
-const renderSkill = ({ content, tier }) => (<Skill content={content} tier={tier} />)
+const renderSkill = ({ content, tier, key }) => (
+  <Skill key={key} content={content} tier={tier} />
+);
 
 const renderSkills = skills => skills.map(renderSkill);
 

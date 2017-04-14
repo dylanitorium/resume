@@ -52,12 +52,12 @@ export default [
     tier: 1,
   },
   {
-    content: <img src="images/silverstripe-logo.svg" />,
+    content: 'devicon-custom devicon-silverstripe',
     key: 11,
     tier: 1,
   },
   {
-    content: <img src="images/webpack-logo.svg" />,
+    content: 'devicon-custom devicon-webpack',
     key: 12,
     tier: 1,
   },
@@ -102,12 +102,12 @@ export default [
     tier: 2,
   },
   {
-    content: <img src="images/ember-logo.svg" />,
+    content: 'devicon-custom devicon-ember',
     key: 21,
     tier: 2,
   },
   {
-    content: <img src="images/css-modules-logo.svg" />,
+    content: 'devicon-custom devicon-css-modules',
     key: 22,
     tier: 2,
   },
@@ -137,12 +137,12 @@ export default [
     tier: 3,
   },
   {
-    content: <img src="images/socketio-logo.svg" />,
+    content: 'devicon-custom devicon-socketio',
     key: 28,
     tier: 3,
   },
   {
-    content: <img src="images/cssnext-logo.svg" />,
+    content: 'devicon-custom devicon-cssnext',
     key: 29,
     tier: 3,
   },

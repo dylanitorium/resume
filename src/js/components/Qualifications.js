@@ -11,7 +11,7 @@ const QualificationIcon = ({ icon }) => (
 );
 
 
-const Qualification = ({ degree, institute, period, description, icon, key }) => (
+const Qualification = ({ degree, institute, period, description, icon }) => (
   <div className="box role-box">
     <div className="level is-marginless">
       <div className="level-left">
@@ -36,7 +36,18 @@ const Qualification = ({ degree, institute, period, description, icon, key }) =>
   </div>
 );
 
-const renderQualifications = qualifications => qualifications.map(Qualification);
+const renderQualification = ({ degree, institute, period, description, icon, key }) => (
+  <Qualification
+    degree={degree}
+    institute={institute}
+    period={period}
+    description={description}
+    icon={icon}
+    key={key}
+    />
+);
+
+const renderQualifications = qualifications => qualifications.map(renderQualification);
 
 const Qualifications = ({ qualifications }) => (
   <div>{renderQualifications(qualifications)}</div>

@@ -11,7 +11,7 @@ const CollapseIcon = () => (
 );
 
 
-const Role = ({ title, organisation, period, description, location, key }) => (
+const Role = ({ title, organisation, period, description, location }) => (
   <div className="box role-box">
     <div className="level is-marginless">
       <div className="level-left">
@@ -35,7 +35,16 @@ const Role = ({ title, organisation, period, description, location, key }) => (
   </div>
 );
 
-const renderRoles = roles => roles.map(Role);
+const renderRole = ({ title, organisation, period, description, location, key }) => (
+  <Role
+    title={title}
+    organisation={organisation}
+    period={period}
+    description={description}
+    key={key} />
+)
+
+const renderRoles = roles => roles.map(renderRole);
 
 const Roles = ({ roles }) => (
   <div>{renderRoles(roles)}</div>

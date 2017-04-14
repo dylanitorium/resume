@@ -1,0 +1,59 @@
+@import "variables";
+
+@font-face {
+  font-family: 'devicon-custom';
+  src:  url('#{$icomoon-font-path}/devicon-custom.eot?h0bzyy');
+  src:  url('#{$icomoon-font-path}/devicon-custom.eot?h0bzyy#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/devicon-custom.ttf?h0bzyy') format('truetype'),
+    url('#{$icomoon-font-path}/devicon-custom.woff?h0bzyy') format('woff'),
+    url('#{$icomoon-font-path}/devicon-custom.svg?h0bzyy#devicon-custom') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.devicon-custom {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'devicon-custom' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.devicon-css-modules {
+  &:before {
+    content: $devicon-css-modules;
+  }
+}
+.devicon-cssnext {
+  &:before {
+    content: $devicon-cssnext;
+  }
+}
+.devicon-ember {
+  &:before {
+    content: $devicon-ember;
+  }
+}
+.devicon-silverstripe {
+  &:before {
+    content: $devicon-silverstripe;
+  }
+}
+.devicon-socketio {
+  &:before {
+    content: $devicon-socketio;
+  }
+}
+.devicon-webpack {
+  &:before {
+    content: $devicon-webpack;
+  }
+}
+

@@ -1,1 +1,1 @@
-pm2 start ecosystem.config.js 
+./node_modules/.bin/rigor -p 8282 ./dist

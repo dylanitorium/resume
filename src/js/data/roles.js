@@ -8,19 +8,7 @@ export default [
     period: 'January 2017 - present',
     description:
     <div className='content'>
-      <p>
-        {`For my first contract position, I joined the Ministry of Education's web services team. This
-          team acts as a bespoke development team inside the Ministry, delivering web sites and
-          applications on the Common Web Platform using SilverStripe. As well as being my first
-          contract role, this is also my first Senior role which involves providing technical guidance
-          to other teammates when required.`}
-      </p>
-      <p>
-        {`A project of note is the Forms project which aims to digitize a number of physical, paper
-          based process, making them simple and accessible to user and the data easily analyzed. To
-          accomplish this we utilized Ember.js as a frontend framework so as to create a reusable
-          library and components and features that will grow as more forms are developed.`}
-      </p>
+    
     </div>
   },
   {
